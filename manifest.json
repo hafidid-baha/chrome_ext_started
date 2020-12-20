@@ -1,0 +1,42 @@
+{
+    "name": "simple 1 extension",
+    "description": "created with a ll the love and creativity",
+    "version": "1.0",
+    "manifest_version": 2,
+    "permissions": [
+        "declarativeContent",
+        "storage",
+        "activeTab"
+    ],
+    "page_action": {
+        "default_popup": "hello.html",
+        "default_icon": {
+            "16": "hello_extensions.png",
+            "32": "hello_extensions.png",
+            "48": "hello_extensions.png",
+            "128": "hello_extensions.png"
+        }
+    },
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+F",
+                "mac": "MacCtrl+Shift+F"
+            },
+            "description": "Opens hello.html"
+        }
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "icons": {
+        "16": "hello_extensions.png",
+        "32": "hello_extensions.png",
+        "48": "hello_extensions.png",
+        "128": "hello_extensions.png"
+    },
+    "options_page": "options.html"
+}
